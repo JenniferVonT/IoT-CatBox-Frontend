@@ -1,7 +1,6 @@
 import './quickStats.css'
 
 function QuickStats ({
-  visits,
   maxTemp,
   minTemp,
   avgTemp,
@@ -13,13 +12,7 @@ function QuickStats ({
     <div className='quick-stats'>
       <h2>Stats</h2>
 
-      <div className='quick-stats__visits'>
-        <p className='quick-stats__visits-label'>Visits*</p>
-        <p className='quick-stats__visits-value'>{visits}</p>
-      </div>
-
       <div className='quick-stats__metrics'>
-
         <section className='quick-stats__section'>
           <h3>Temperature</h3>
 
@@ -57,8 +50,6 @@ function QuickStats ({
             <span className='quick-stats__value-number'>{avgHumidity} %</span>
           </p>
         </section>
-
-        <i>* A visit is counted when the Humidity exceeds X% for more than X minutes. TO-DO: update</i>
       </div>
     </div>
   )

@@ -250,7 +250,6 @@ function App () {
         <div id='quick-stats' className='container tint'>
           {summary && (
             <QuickStats
-              visits={summary.visits}
               maxTemp={summary.maxTemp}
               minTemp={summary.minTemp}
               avgTemp={summary.avgTemp}

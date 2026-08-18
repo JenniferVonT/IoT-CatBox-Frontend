@@ -16,27 +16,6 @@ i {
   letter-spacing: 0.05em;
 }
 
-/* Visits */
-
-.quick-stats__visits {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.quick-stats__visits-label {
-  margin: 0;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #999;
-}
-
-.quick-stats__visits-value {
-  margin: 0.25rem 0 0;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 /* Temperature / Humidity */
 
 .quick-stats__metrics {
