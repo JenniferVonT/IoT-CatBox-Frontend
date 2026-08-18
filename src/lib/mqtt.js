@@ -9,6 +9,8 @@ class MqttClient {
     this.username = import.meta.env.VITE_MQTT_USERNAME
     this.password = import.meta.env.VITE_MQTT_PASSWORD
 
+    console.log('MQTT broker URL:', this.brokerUrl)
+
     this.onMessage = null
     this.onConnectionChange = null
   }
