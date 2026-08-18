@@ -1,0 +1,87 @@
+i {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.quick-stats {
+  width: 100%;
+  padding: 1.5rem;
+  color: #e7e7e7;
+}
+
+.quick-stats h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Visits */
+
+.quick-stats__visits {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quick-stats__visits-label {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+}
+
+.quick-stats__visits-value {
+  margin: 0.25rem 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Temperature / Humidity */
+
+.quick-stats__metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.quick-stats__section {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #ffffff08;
+  border: 1px solid #ffffff12;
+}
+
+.quick-stats__section h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #aaa;
+}
+
+.quick-stats__value {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.5rem 0;
+}
+
+.quick-stats__value-label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.quick-stats__value-number {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .quick-stats__metrics {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,108 @@
+html {
+  background-color: #3b3b3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0rem 1.5rem 10rem;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+  color:#e7e7e7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid #ffffff12;
+  margin: 0.75rem 0;
+}
+
+.container-h {
+  flex-direction: row;
+}
+
+.container-v {
+  flex-direction: column;
+}
+
+.tint {
+  background-color: #0000002f;
+}
+
+#title {
+  width: max-content;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.chart-row {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+#humidity,
+#temperature {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 0;
+}
+
+.info-row {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+#description {
+  flex: 1 1 30%;
+  min-width: 0;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  text-align: left;
+  padding: 1.5rem;
+  gap: 0.75rem;
+}
+
+#description h2,
+#description p {
+  margin: 0;
+}
+
+#quick-stats {
+  flex: 2 1 65%;
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  #title {
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .info-row,
+  .chart-row {
+    flex-direction: column;
+  }
+
+  #humidity,
+  #temperature {
+    width: 100%;
+  }
+}

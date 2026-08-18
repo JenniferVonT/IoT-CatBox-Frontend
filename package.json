@@ -1,0 +1,23 @@
+{
+  "name": "iot_frontend",
+  "version": "1.0.0",
+  "description": "The frontend application for the iot assignment displaying the data on the web. Subscribes to the MQTT broker to show real-time data, uses the backend to fetch historical data.",
+  "license": "MIT",
+  "author": "Jennifer von Trotta-Treyden <jv222th>",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "mqtt": "^5.15.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  }
+}
