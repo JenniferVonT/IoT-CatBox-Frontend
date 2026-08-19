@@ -41,8 +41,6 @@ function App () {
         setTempHistory(response.history)
         setHumidHistory(response.history)
 
-        console.log('Fetched telemetry history:', response.history)
-
         setEarliestTimestamp(
           formatDateTimeLocal(response.earliestTimestamp)
         )
@@ -72,7 +70,6 @@ function App () {
     mqttClient.connect({
       onMessage: (data) => {
         setLatestReading(data)
-        console.log('Received MQTT message:', data)
       },
       onConnectionChange: (connected) => {
         setMqttConnected(connected)
